@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agencia Turismo"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:text="Nombre"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/etnombre"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Ingrese nombre"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:text="Destino"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            />
+        <Spinner
+            android:id="@+id/spdestino"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:text="Fecha salida"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/etfecha"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Ingrese fecha salida"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:text="Numero personas"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/etpersonas"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Ingrese personas"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:text="Numero de Dias"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/rb12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/rb24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="24" />
+            <RadioButton
+                android:id="@+id/rb36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="36"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="23dp">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Adiciónales" />
+
+        <Switch
+            android:id="@+id/swtour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Tour por ciudad" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Switch
+            android:id="@+id/swdiscoteca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginBottom="10dp"
+            android:text="Discoteca" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Nombre"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/ettotal"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Ingrese nombre"
+
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
